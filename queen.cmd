@@ -25,8 +25,18 @@ if %img%==10 start https://wallpaperaccess.com/full/6876491.jpg
 ::setting the wallpaper to a disapproving queen. Will probably work after an hour,
 ::definitely after a restart. To be improved to pull the images from the net
 
-::Works  by updating the register, RUNDLL32.EXE is half-specified and shouldnt be used
-::like this 
+
+::save the previous wallpaper for ease of restoring. rn works only if it's on the same drive
+
+FOR /F "tokens=2* skip=2" %%a in ('REG QUERY "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper') do (set prevPath=%%b)
+echo %prevPath%
+
+copy %prevPath% %~dp0screensaver\
+
+
+
+
+::Works  by updating the register, RUNDLL32.EXE is underspecified and shouldnt generally be used like this
 
 set queenPath=%~dp0screensaver\dq.jpg
 ECHO %queenPath%
