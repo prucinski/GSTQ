@@ -3,7 +3,7 @@ For anyone that needs some more Queen in their lives. Or, for anyone who wants a
 ## What it does
 This fantastic piece of software will bless your computer with an hourly image of the Queen opened in your browser. It will also periodically change your desktop background to a disapproving picture of Her Majesty Queen Elizabeth II.
 ## How to run it
-Put everything into one folder. Run queenScheduler.cmd. That's all!
+Put everything into one (doesn't matter what) folder. Run queenScheduler.cmd. That's all!
 ## How to uninstall
 First, consider your reasons for uninstalling. Then, if you still want to proceed, go into Windows' Task Scheduler and remove QueenTask.
 ## Todo
